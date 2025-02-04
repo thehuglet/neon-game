@@ -1,0 +1,96 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[addons]
+
+resources_spreadsheet_view/array_color_tint=100.0
+resources_spreadsheet_view/color_rows=true
+resources_spreadsheet_view/array_min_width=128.0
+resources_spreadsheet_view/resource_preview_size=32.0
+resources_spreadsheet_view/clip_headers=false
+resources_spreadsheet_view/dupe_arrays=true
+resources_spreadsheet_view/context_menu_on_leftclick=false
+resources_spreadsheet_view/fold_docks=true
+resources_spreadsheet_view/resource_cell_label_mode=1
+
+[application]
+
+config/name="NeonGame"
+run/main_scene="res://scenes/level_editor.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Utils="*res://scripts/autoload/utils.gd"
+EntityMovementHandler="*res://scripts/autoload/entity_movement_handler.gd"
+
+[debug]
+
+gdscript/warnings/unused_parameter=0
+gdscript/warnings/untyped_declaration=1
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="NeonRevised"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/simple_tool_button/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://resources/": "purple",
+"res://scenes/": "red",
+"res://scenes/components/": "red",
+"res://scenes/entities/": "red",
+"res://scripts/": "blue",
+"res://shaders/": "green",
+"res://textures/": "orange"
+}
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
+[input]
+
+up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"location":0,"echo":false,"script":null)
+]
+}
+down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
+]
+}
+left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
+]
+}
+right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
+]
+}
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.226707, 0.226707, 0.226707, 1)
+viewport/hdr_2d=true

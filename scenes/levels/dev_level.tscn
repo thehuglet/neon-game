@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl1pranbnpf7n"]
+
+[ext_resource type="PackedScene" uid="uid://dwxium3jqkasw" path="res://scenes/entities/player.tscn" id="1_m7n1m"]
+[ext_resource type="PackedScene" uid="uid://cfwbtqi4jctk5" path="res://scenes/entities/roto.tscn" id="2_uriyb"]
+
+[sub_resource type="Environment" id="Environment_j1t3x"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 2.2
+glow_strength = 0.42
+glow_bloom = 0.25
+glow_blend_mode = 1
+
+[node name="DevLevel" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_m7n1m")]
+position = Vector2(1316, 415)
+
+[node name="Roto" parent="." instance=ExtResource("2_uriyb")]
+position = Vector2(483, 446)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j1t3x")

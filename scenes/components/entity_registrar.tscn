@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://c03uw7rb4q5e7"]
+
+[ext_resource type="Script" path="res://scripts/components/entity_registrar.gd" id="1_swepf"]
+
+[node name="EntityRegistrar" type="Node"]
+script = ExtResource("1_swepf")
+btn_register_toggle2 = [{
+"align": "end",
+"click": Callable(),
+"icon": "Play",
+"text": "Play"
+}]
+btn_register_toggle = {
+"click": Callable(),
+"color": "success",
+"icon": "Add",
+"text": "Register Entity"
+}

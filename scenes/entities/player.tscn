@@ -1,0 +1,31 @@
+[gd_scene load_steps=9 format=3 uid="uid://dwxium3jqkasw"]
+
+[ext_resource type="Script" path="res://scripts/entities/player.gd" id="1_ignyv"]
+[ext_resource type="PackedScene" uid="uid://c5vtxpfuldox3" path="res://scenes/components/neon_sprite.tscn" id="2_1fjgx"]
+[ext_resource type="Resource" uid="uid://d0xei6b44p3x2" path="res://resources/entity_stats/player_stats.tres" id="2_fl5mu"]
+[ext_resource type="Texture2D" uid="uid://dmwg5565effbo" path="res://textures/cube_1.png" id="2_fm5l6"]
+[ext_resource type="Texture2D" uid="uid://bme4tbmwuilom" path="res://textures/cube_1__Blur_5.0.png" id="3_18m1y"]
+[ext_resource type="PackedScene" uid="uid://c03uw7rb4q5e7" path="res://scenes/components/entity_registrar.tscn" id="3_c8qwq"]
+[ext_resource type="PackedScene" uid="uid://br1lhu5783pug" path="res://scenes/components/entity_movement.tscn" id="4_q1kwh"]
+[ext_resource type="Resource" uid="uid://gge3obhkpc0p" path="res://resources/entity_movement_strategies/player_movement_strategy.tres" id="7_ds4qm"]
+
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("_neon_sprite") groups=["player"]]
+script = ExtResource("1_ignyv")
+_neon_sprite = NodePath("NeonSprite")
+stats = ExtResource("2_fl5mu")
+
+[node name="EntityRegistrar (Registered)" parent="." instance=ExtResource("3_c8qwq")]
+btn_register_toggle = {
+"click": Callable(),
+"color": "danger",
+"icon": "Remove",
+"text": "Unregister Entity"
+}
+
+[node name="NeonSprite" parent="." instance=ExtResource("2_1fjgx")]
+base_texture = ExtResource("2_fm5l6")
+glow_texture = ExtResource("3_18m1y")
+color = Color(0, 1, 1, 1)
+
+[node name="EntityMovement" parent="." instance=ExtResource("4_q1kwh")]
+strategy = ExtResource("7_ds4qm")

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EntityRegistry" load_steps=2 format=3 uid="uid://ln225q0c54ng"]
+
+[ext_resource type="Script" path="res://scripts/resources/entity_registry.gd" id="1_slyjv"]
+
+[resource]
+script = ExtResource("1_slyjv")
+registered_entities = Array[String](["res://scenes/entities/roto.tscn", "res://scenes/entities/player.tscn"])
+metadata/_edit_pinned_properties_ = [&"registered_entities"]

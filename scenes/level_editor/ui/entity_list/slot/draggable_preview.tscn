@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhm4mbh2k73ig"]
+
+[ext_resource type="Script" path="res://scripts/level_editor/ui/entity_list/slot/draggable_preview.gd" id="1_3w7n5"]
+[ext_resource type="PackedScene" uid="uid://c5vtxpfuldox3" path="res://scenes/components/neon_sprite.tscn" id="1_ywtw7"]
+
+[node name="DraggablePreview" type="Container" node_paths=PackedStringArray("neon_sprite")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3w7n5")
+neon_sprite = NodePath("NeonSprite")
+
+[node name="NeonSprite" parent="." instance=ExtResource("1_ywtw7")]
+unique_name_in_owner = true

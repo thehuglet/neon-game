@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="ChaseTargetEntityMovementStrategy" load_steps=2 format=3 uid="uid://gge3obhkpc0p"]
+
+[ext_resource type="Script" path="res://scripts/resources/entity_movement_strategies/player_movement.gd" id="1_jcxm8"]
+
+[resource]
+script = ExtResource("1_jcxm8")

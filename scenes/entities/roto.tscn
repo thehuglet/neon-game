@@ -1,0 +1,31 @@
+[gd_scene load_steps=9 format=3 uid="uid://cfwbtqi4jctk5"]
+
+[ext_resource type="Script" path="res://scripts/entities/roto.gd" id="1_8150j"]
+[ext_resource type="Resource" uid="uid://doyaxn56vl61" path="res://resources/entity_stats/roto_stats.tres" id="2_d8m1s"]
+[ext_resource type="PackedScene" uid="uid://c03uw7rb4q5e7" path="res://scenes/components/entity_registrar.tscn" id="3_h10uo"]
+[ext_resource type="PackedScene" uid="uid://c5vtxpfuldox3" path="res://scenes/components/neon_sprite.tscn" id="3_pov7v"]
+[ext_resource type="Texture2D" uid="uid://b32y07mwckeps" path="res://textures/Roto_0.png" id="4_v2m23"]
+[ext_resource type="Texture2D" uid="uid://c07xi17fksxc" path="res://textures/Roto_0__Blur_5.0.png" id="5_2rig8"]
+[ext_resource type="PackedScene" uid="uid://br1lhu5783pug" path="res://scenes/components/entity_movement.tscn" id="6_rffbn"]
+[ext_resource type="Resource" uid="uid://qtwpyrhjbafm" path="res://resources/entity_movement_strategies/chase_target.tres" id="7_5tdwi"]
+
+[node name="Roto" type="CharacterBody2D" node_paths=PackedStringArray("_neon_sprite")]
+script = ExtResource("1_8150j")
+_neon_sprite = NodePath("NeonSprite")
+stats = ExtResource("2_d8m1s")
+
+[node name="EntityRegistrar (Registered)" parent="." instance=ExtResource("3_h10uo")]
+btn_register_toggle = {
+"click": Callable(),
+"color": "danger",
+"icon": "Remove",
+"text": "Unregister Entity"
+}
+
+[node name="NeonSprite" parent="." instance=ExtResource("3_pov7v")]
+base_texture = ExtResource("4_v2m23")
+glow_texture = ExtResource("5_2rig8")
+color = Color(1, 0, 0, 1)
+
+[node name="EntityMovement" parent="." instance=ExtResource("6_rffbn")]
+strategy = ExtResource("7_5tdwi")

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ChaseTargetEntityMovementStrategy" load_steps=2 format=3 uid="uid://qtwpyrhjbafm"]
+
+[ext_resource type="Script" path="res://scripts/resources/entity_movement_strategies/chase_target.gd" id="1_hpwfb"]
+
+[resource]
+script = ExtResource("1_hpwfb")
+target_group = "player"
+turn_rate = 0.0

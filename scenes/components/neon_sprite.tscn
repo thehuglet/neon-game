@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5vtxpfuldox3"]
+
+[ext_resource type="Script" path="res://scripts/components/neon_sprite.gd" id="1_bnnjq"]
+[ext_resource type="Shader" path="res://shaders/components/neon_sprite/glow_sprite.gdshader" id="2_fa6ib"]
+[ext_resource type="Shader" path="res://shaders/components/neon_sprite/base_sprite.gdshader" id="3_tikrp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a1d7h"]
+resource_local_to_scene = true
+shader = ExtResource("2_fa6ib")
+shader_parameter/u_color = Color(1, 1, 1, 1)
+shader_parameter/u_rgb_boost = 0.5
+shader_parameter/u_alpha_boost = 0.3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dm0td"]
+resource_local_to_scene = true
+shader = ExtResource("3_tikrp")
+shader_parameter/u_color = Color(1, 1, 1, 1)
+shader_parameter/u_rgb_boost = 0.5
+shader_parameter/u_alpha_boost = 0.0
+
+[node name="NeonSprite" type="Node2D" node_paths=PackedStringArray("_base_sprite", "_glow_sprite")]
+script = ExtResource("1_bnnjq")
+sprite_scale = 0.5
+color = Color(1, 1, 1, 1)
+rgb_boost_link = true
+base_rgb_boost = 0.5
+glow_rgb_boost = 0.5
+glow_alpha_boost = 0.3
+_base_sprite = NodePath("BaseSprite")
+_glow_sprite = NodePath("GlowSprite")
+metadata/_access_modifiers = {
+"_base_sprite": 2,
+"_glow_sprite": 2
+}
+
+[node name="GlowSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_a1d7h")
+scale = Vector2(0.5, 0.5)
+
+[node name="BaseSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_dm0td")
+scale = Vector2(0.5, 0.5)

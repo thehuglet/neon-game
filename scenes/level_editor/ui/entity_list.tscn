@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdt5thuqy1nk1"]
+
+[ext_resource type="Script" path="res://scripts/level_editor/ui/entity_list.gd" id="1_44agh"]
+[ext_resource type="PackedScene" uid="uid://dy5fjwfng4sgo" path="res://scenes/level_editor/ui/entity_list/slot.tscn" id="1_bmfy4"]
+
+[node name="EntityList" type="PanelContainer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -274.0
+offset_top = 44.0
+offset_right = -48.0
+offset_bottom = 759.0
+grow_horizontal = 0
+script = ExtResource("1_44agh")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="Slot" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot2" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot3" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot4" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2

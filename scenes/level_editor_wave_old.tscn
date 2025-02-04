@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nf3ullrrfcag"]
+
+[ext_resource type="Script" path="res://scripts/level_editor_wave_old.gd" id="1_8i25c"]
+
+[node name="LevelEditorWave" type="Node2D"]
+script = ExtResource("1_8i25c")
