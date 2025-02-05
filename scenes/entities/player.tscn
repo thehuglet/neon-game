@@ -21,6 +21,7 @@ btn_register_toggle = {
 "icon": "Remove",
 "text": "Unregister Entity"
 }
+present_in_level_editor = false
 
 [node name="NeonSprite" parent="." instance=ExtResource("2_1fjgx")]
 base_texture = ExtResource("2_fm5l6")

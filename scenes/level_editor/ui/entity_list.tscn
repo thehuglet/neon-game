@@ -4,14 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dy5fjwfng4sgo" path="res://scenes/level_editor/ui/entity_list/slot.tscn" id="1_bmfy4"]
 
 [node name="EntityList" type="PanelContainer"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -274.0
-offset_top = 44.0
-offset_right = -48.0
-offset_bottom = 759.0
-grow_horizontal = 0
+offset_right = 226.0
+offset_bottom = 715.0
 script = ExtResource("1_44agh")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
@@ -50,5 +44,137 @@ custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 
 [node name="Slot4" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot5" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot6" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot7" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot8" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot9" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot10" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot11" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot12" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot13" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot14" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot15" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot16" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot17" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot18" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot19" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot20" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot21" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot22" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot23" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot24" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot25" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot26" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot27" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot28" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot29" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot30" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot31" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot32" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot33" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot34" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot35" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot36" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="Slot37" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("1_bmfy4")]
 custom_minimum_size = Vector2(0, 90)
 layout_mode = 2

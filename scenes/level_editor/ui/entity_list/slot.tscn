@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dy5fjwfng4sgo"]
+[gd_scene load_steps=3 format=3 uid="uid://dy5fjwfng4sgo"]
 
 [ext_resource type="Script" path="res://scripts/level_editor/ui/entity_list/slot.gd" id="1_c5lod"]
-[ext_resource type="Script" path="res://scripts/level_editor/ui/entity_list/slot/panel.gd" id="2_lmdak"]
 [ext_resource type="PackedScene" uid="uid://c5vtxpfuldox3" path="res://scenes/components/neon_sprite.tscn" id="2_serjq"]
 
 [node name="Slot" type="AspectRatioContainer"]
@@ -14,7 +13,6 @@ script = ExtResource("1_c5lod")
 [node name="Panel" type="Panel" parent="."]
 unique_name_in_owner = true
 layout_mode = 2
-script = ExtResource("2_lmdak")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 2
