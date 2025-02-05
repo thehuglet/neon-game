@@ -2,7 +2,6 @@ extends PanelContainer
 
 const NEON_SPRITE_SCENE_PATH: String = 'res://scenes/components/neon_sprite.tscn'
 const ENTITY_REGISTRY_PATH: String = 'res://resources/entity_registry.tres'
-
 const EXCLUDED_ENTITY_SCENES: Array[String] = [
 	'res://scenes/entities/player.tscn'
 ]
