@@ -1,4 +1,4 @@
-class_name LevelEditorWave
+# class_name LevelEditorWave
 extends Node2D
 
 @export_range(0.0, 60.0, 0.5) var wave_spawn_delay_sec: float

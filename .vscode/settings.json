@@ -8,7 +8,12 @@
 		"**/Thumbs.db": true,
 		".pytest_cache/": true,
 		"**/__pycache__/": true,
-		"**/.beet_cache/": true
+		"**/.beet_cache/": true,
+		".godot": true,
+		".vscode": true
 	},
-	"hide-files.files": []
+	"hide-files.files": [
+		".godot",
+		".vscode"
+	]
 }

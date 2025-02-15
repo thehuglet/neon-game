@@ -1,5 +1,5 @@
 @tool
-class_name LevelEditor
+# class_name LevelEditor
 extends Node2D
 
 @export var level_name: String = 'My Level'

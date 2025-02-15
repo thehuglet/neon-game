@@ -1,3 +1,4 @@
+class_name LevelEditorEntityList
 extends PanelContainer
 
 const NEON_SPRITE_SCENE_PATH: String = 'res://scenes/components/neon_sprite.tscn'
@@ -9,6 +10,9 @@ const EXCLUDED_ENTITY_SCENES: Array[String] = [
 @onready var _grid_container: GridContainer = %GridContainer
 
 func _ready() -> void:
+	# SignalBus.level_editor_field_item_dragged.connect(hide)
+	# SignalBus.level_editor_field_item_dropped.connect(show)
+
 	var entity_registry: EntityRegistry = ResourceLoader.load(ENTITY_REGISTRY_PATH) as EntityRegistry
 	if not entity_registry:
 		push_error('Failed to load entity registry.')

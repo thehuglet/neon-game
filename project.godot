@@ -30,6 +30,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Utils="*res://scripts/autoload/utils.gd"
+SignalBus="*res://scripts/autoload/signal_bus.gd"
 EntityMovementHandler="*res://scripts/autoload/entity_movement_handler.gd"
 
 [debug]
@@ -39,9 +40,10 @@ gdscript/warnings/untyped_declaration=1
 
 [display]
 
-window/size/viewport_width=1600
-window/size/viewport_height=900
-window/stretch/mode="viewport"
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
 
 [dotnet]
 
@@ -92,5 +94,5 @@ right={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.226707, 0.226707, 0.226707, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 viewport/hdr_2d=true

@@ -8,6 +8,8 @@
 resource_local_to_scene = true
 shader = ExtResource("2_fa6ib")
 shader_parameter/u_color = Color(1, 1, 1, 1)
+shader_parameter/u_final_tint = Color(1, 1, 1, 1)
+shader_parameter/u_final_alpha = 1.0
 shader_parameter/u_rgb_boost = 0.5
 shader_parameter/u_alpha_boost = 0.3
 
@@ -15,6 +17,8 @@ shader_parameter/u_alpha_boost = 0.3
 resource_local_to_scene = true
 shader = ExtResource("3_tikrp")
 shader_parameter/u_color = Color(1, 1, 1, 1)
+shader_parameter/u_final_tint = Color(1, 1, 1, 1)
+shader_parameter/u_final_alpha = 1.0
 shader_parameter/u_rgb_boost = 0.5
 shader_parameter/u_alpha_boost = 0.0
 
@@ -26,6 +30,8 @@ rgb_boost_link = true
 base_rgb_boost = 0.5
 glow_rgb_boost = 0.5
 glow_alpha_boost = 0.3
+final_tint = Color(1, 1, 1, 1)
+final_alpha = 1.0
 _base_sprite = NodePath("BaseSprite")
 _glow_sprite = NodePath("GlowSprite")
 metadata/_access_modifiers = {

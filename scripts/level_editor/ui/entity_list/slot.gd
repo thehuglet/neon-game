@@ -16,23 +16,17 @@ func _on_resize() -> void:
 	# for the grid container
 	custom_minimum_size.y = size.x
 
-func _get_drag_data(at_position: Vector2) -> String:
+func _get_drag_data(at_position: Vector2) -> Array:
+	# draggable preview
 	var preview: LevelEditorDraggablePreview = _draggable_preview_scene.instantiate()
 	preview.neon_sprite.base_texture = neon_sprite.base_texture
 	preview.neon_sprite.glow_texture = neon_sprite.glow_texture
 	preview.neon_sprite.color = neon_sprite.color
+	preview.neon_sprite.scale = neon_sprite.scale
 	set_drag_preview(preview)
 
-	return _entity_scene_path
+	# screen space display
+	var neon_sprite_copy: NeonSprite = neon_sprite.duplicate()
 
-# func _get_drag_data(at_position: Vector2) -> Variant:
-# 	var inst = neon_sprite.duplicate()
-# 	add_child(inst)
-# 	print(inst)
-# 	return inst
-
-	# func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
-	# 	return data is NeonSprite
-
-# func _drop_data(at_position: Vector2, data: Variant) -> void:
-# 	neon_sprite = data
+	SignalBus.level_editor_field_item_dragged.emit()
+	return [_entity_scene_path, neon_sprite_copy]

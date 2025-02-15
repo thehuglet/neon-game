@@ -73,6 +73,17 @@ extends Node2D
 		elif alpha_boost_link:
 			_skip_next_link = true
 			base_alpha_boost = value
+@export_color_no_alpha var final_tint: Color:
+	set(value):
+		final_tint = value
+		_set_shader_uniform(_glow_sprite, 'u_final_tint', value)
+		_set_shader_uniform(_base_sprite, 'u_final_tint', value)
+@export var final_alpha: float:
+	set(value):
+		final_alpha = value
+		_set_shader_uniform(_glow_sprite, 'u_final_alpha', value)
+		_set_shader_uniform(_base_sprite, 'u_final_alpha', value)
+
 @export_group('Private')
 @export var _base_sprite: Sprite2D
 @export var _glow_sprite: Sprite2D

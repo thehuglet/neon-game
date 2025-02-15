@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo0u8s4arjlee"]
+
+[ext_resource type="Script" path="res://scripts/level_editor/ui/entity_wave.gd" id="1_7sjbi"]
+
+[node name="EntityWave" type="Node2D"]
+script = ExtResource("1_7sjbi")
